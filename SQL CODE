@@ -1,0 +1,51 @@
+-- Create tables
+CREATE TABLE menu_items (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(255),
+    item_description TEXT,
+    item_price DECIMAL(8, 2)
+);
+
+CREATE TABLE customer_orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(255),
+    order_date DATE,
+    total_price DECIMAL(8, 2)
+);
+
+-- Insert sample data into menu_items
+INSERT INTO menu_items (item_name, item_description, item_price) VALUES
+    ('Margherita Pizza', 'Classic tomato and cheese pizza', 9.99),
+    ('Pepperoni Pizza', 'Tomato, cheese, and pepperoni', 11.99),
+    ('Vegetarian Pizza', 'Tomato, cheese, and assorted vegetables', 10.99),
+    ('Hawaiian Pizza', 'Tomato, cheese, ham, and pineapple', 12.99),
+    ('Supreme Pizza', 'Tomato, cheese, pepperoni, sausage, peppers, onions, olives, mushrooms', 14.99),
+    ('Cheeseburger Pizza', 'Tomato, cheese, ground beef, onions, pickles, and ketchup-mustard sauce', 13.99),
+    ('Mushroom Pizza', 'Tomato, cheese, and assorted mushrooms', 10.99),
+    ('BBQ Chicken Pizza', 'BBQ sauce, cheese, grilled chicken, onions, and cilantro', 13.99),
+    ('Veggie Delight Pizza', 'Tomato, cheese, bell peppers, onions, olives, and spinach', 11.99),
+    ('Meat Lovers Pizza', 'Tomato, cheese, pepperoni, sausage, bacon, and ham', 15.99),
+    ('Spinach and Feta Pizza', 'Tomato, cheese, spinach, feta cheese, and garlic', 12.99),
+    ('Garlic Knots', 'Baked dough knots brushed with garlic butter', 4.99),
+    ('Caesar Salad', 'Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing', 7.99),
+    ('Chicken Wings', 'Crispy chicken wings with your choice of sauce', 9.99),
+
+-- Inserting sample data into customer_orders
+INSERT INTO customer_orders (customer_name, order_date, total_price) VALUES
+    ('Ritik Patel', '2023-10-09', 24.97),
+    ('Ansh Patel', '2023-10-09', 14.99),
+    ('akash gadani', '2023-10-10', 22.49),
+    ('tinaji mehta', '2023-10-10', 18.99),
+    ('Charlie Brown', '2023-10-11', 30.95),
+    ('vihang desai', '2023-10-11', 11.99),
+    ('Nirav Patel', '2023-10-12', 26.98),
+    ('Janak Thakor', '2023-10-12', 15.99),
+    ('Nilu Patel', '2023-10-13', 17.50),
+    ('Henry Wilson', '2023-10-13', 19.99),
+    ('Khushiyan Raval', '2023-10-14', 28.75),
+    ('Yash Sharma', '2023-10-14', 12.50),
+    ('Kelly Turner', '2023-10-15', 21.99),
+    ('Liam Robinson', '2023-10-15', 15.25),
+    ('Parth Patel', '2023-10-16', 19.99),
+    ('Yansu Patel', '2023-10-16', 10.99),
+
